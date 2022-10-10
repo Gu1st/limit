@@ -1,0 +1,30 @@
+{
+  "name": "harexs-limit",
+  "version": "1.0.0",
+  "description": "Promise-Async functions with limited concurrency",
+  "type": "module",
+  "scripts": {
+    "commit": "git-cz",
+    "release": "release-it",
+    "build":"rollup --config"
+  },
+  "keywords": ["limit","promise","task","limited","async","concurrency"],
+  "exports": {
+    "default": "./dist/harexs-limit.esm.js",
+    "require": "./dist/harexs-limit.cjs",
+    "/umd": "./dist/harexs-limit.umd.js"
+  },
+  "source": "src/index.js",
+  "files": [
+    "./dist",
+    "./src"
+  ],
+  "author": "Harexs",
+  "license": "MIT",
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^5.1.1",
+    "git-cz": "^4.9.0",
+    "release-it": "^15.5.0",
+    "rollup": "^2.79.1"
+  }
+}

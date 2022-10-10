@@ -1,0 +1,19 @@
+export default{
+    input:'src/index.js',
+    output:[
+        {
+            file:'dist/harexs-limit.cjs',
+            exports:'default',
+            format:'cjs'
+        },
+        {
+            file:'dist/harexs-limit.esm.js',
+            format:'esm'
+        },
+        {
+            file:'dist/harexs-limit.umd.js',
+            format:'umd',
+            name:'harexsLimit'
+        }
+    ]
+}
