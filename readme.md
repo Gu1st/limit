@@ -5,7 +5,7 @@ Promise-Async functions with limited concurrency
 ## Install
 
 ```
-$ npm install harexs-limit
+$ npm install @harexs/limit
 ```
 
 ## Usage
@@ -15,11 +15,11 @@ import harexsLimit from "harexs-limit";
 let limit = harexsLimit(3);
 
 function sleep(sec) {
-	return new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve();
-		}, sec * 1000);
-	});
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve();
+    }, sec * 1000);
+  });
 }
 
 limit(sleep, 1);
