@@ -2,7 +2,7 @@ export default function harexsLimit(maxCount: number) {
   let activeCount = 0;
   let waitTask: any[] = [];
 
-  const execute = (asyncFn: Function, ...args: any[]) => {
+  const execute = (asyncFn: Function, ...args: any[]): Promise<any> => {
     return new Promise((resolve, reject) => {
       const task = create(asyncFn, args, resolve, reject);
       if (activeCount >= maxCount) {
