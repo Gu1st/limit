@@ -1,1 +1,1 @@
-export default function harexsLimit(maxCount: number): (asyncFn: Function, ...args: any[]) => Promise<unknown>;
+export default function harexsLimit(maxCount: number): (asyncFn: Function, ...args: any[]) => Promise<any>;
